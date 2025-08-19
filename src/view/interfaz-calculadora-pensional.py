@@ -12,8 +12,11 @@ try:
     salario_promedio=int(input("Ingrese su salaio promedio: "))
     saldo_acomulado=int(input("Ingrese el saldo acomulado si su entidad es privada: "))
 
-except ValueError as error_valores:
-    ...
+    pension_mensual = Pension_prueba.calcular_reemplazo_colpensiones(salario_promedio, semanas, edad)
+    print(pension_mensual)
+
+except ValueError as Error:
+    print("No puede calcular la pension mensual:" + str(Error))
 
 except ValueError as e:
     ... 
