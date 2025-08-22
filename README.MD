@@ -4,4 +4,5 @@ El sistema implementa las reglas del nuevo modelo de pilares definido en la refo
 
 De esta forma, la aplicación sirve como una herramienta de apoyo para que trabajadores y empleadores comprendan mejor el impacto de la reforma en la proyección de su pensión y tomen decisiones informadas sobre su futuro financiero.
 
-Elaborado por Mariana Heano Echeverri y Maria Fernanda Piedrahita Montoya.
+### Elaborado por: 
+Mariana Heano Echeverri y Maria Fernanda Piedrahita Montoya.
