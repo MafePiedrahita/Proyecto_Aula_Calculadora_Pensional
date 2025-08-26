@@ -1,8 +1,30 @@
-Este proyecto consiste en el desarrollo de una aplicación que permite estimar el valor de la pensión mensual que un empleado recibiría al momento de jubilarse, de acuerdo con la Reforma Pensional de Colombia aprobada en 2024.
+Calculadora Pensional (Colombia reforma 2024)
+La calculadora Pensional es una herramienta que va a permitir estimar el valor de la pensional mensual que un trabajador en Colombia recibirá al momento de jubilarse.
+Este cálculo se realiza de acuerdo a las reglas establecidas en la Reforma Pnesional 2024, la cual introdujo un modelo de pilares, que combina el égimen público con los fondos privados.
+El propósito de este proyecto es brindar a los usuarios una forma seniclla de simular una pension futura.
 
-El sistema implementa las reglas del nuevo modelo de pilares definido en la reforma, ofreciendo la posibilidad de simular diferentes escenarios de pensión a partir de la información personal del usuario (edad, semanas cotizadas, entidad, salario promedio, entre otros) y variables económicas actualizadas.
+Contexto general de los pilares:
+Régimen de Prima Media (Colpensiones):
+-El trabajador cotiza semanas y al cumplir la edad y requisitos minimos, recibe una pensión calculada sobre un porcentaje de su salario promedio. Lo cual depende principalmente de:
+-Semanas cotizadas 
+-Edad
+-Salario promedio 
+-Tasa de reemplazo definida por la ley
+Régimen de Ahorro Individual con Solidaridad (Privadas):
+-El trabajador ahorra en una cuenta individual administradad por un fondo privado (Protección, Porvenir, Colfondos)
+-El monto de la pensión depende de:
+ -Saldo acumulado
+ -Factor de cálculo (relacionado con esperanza de vida, tasas de interés y modalidad de pensión)
+ -Edad
 
-De esta forma, la aplicación sirve como una herramienta de apoyo para que trabajadores y empleadores comprendan mejor el impacto de la reforma en la proyección de su pensión y tomen decisiones informadas sobre su futuro financiero.
+Funcionalidades:
+-Estima la pensión en Colpensiones 
+-Estima la pensión en fondos privados  
+-Permite introducir datos como salario promedio, semanas cotizadas, saldo acumulado y edad.  
+-Incluye validaciones de errores para asegurar cálculos correctos.  
+-Retorna la pensión mensual proyectada con valores redondeados. 
+
+
 
 ### Elaborado por: 
 Mariana Heano Echeverri y Maria Fernanda Piedrahita Montoya.
