@@ -24,6 +24,8 @@ Funcionalidades:
 -Incluye validaciones de errores para asegurar cálculos correctos.  
 -Retorna la pensión mensual proyectada con valores redondeados. 
 
+Entrevista a experto sobre el tema: https://soundcloud.com/mariana-henao-748870407/entrevista_calculadora_pension?si=6600a80691774424b816af3bda636c84&utm_source=clipboard&utm_medium=text&utm_campaign=social_sharing
+
 
 
 ### Elaborado por: 
