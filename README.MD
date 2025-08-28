@@ -1,4 +1,4 @@
-Calculadora Pensional (Colombia reforma 2024)
+### Proyecto de Aula: Calculadora Pensional (Colombia reforma 2024)
 La calculadora Pensional es una herramienta que va a permitir estimar el valor de la pensional mensual que un trabajador en Colombia recibirá al momento de jubilarse.
 Este cálculo se realiza de acuerdo a las reglas establecidas en la Reforma Pnesional 2024, la cual introdujo un modelo de pilares, que combina el égimen público con los fondos privados.
 El propósito de este proyecto es brindar a los usuarios una forma seniclla de simular una pension futura.
