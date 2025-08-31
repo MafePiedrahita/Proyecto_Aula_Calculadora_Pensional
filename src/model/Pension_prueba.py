@@ -1,14 +1,5 @@
-class Error_no_cumple_semanas(Exception):
-    """Error cuando las semanas cotizadas no cumplen el mínimo"""
+from .clases_error import Error_no_cumple_semanas, Error_invalidez, Error_entidad_invalida, Error_factor_invalido
 
-class Error_invalidez(Exception):
-    """Error por invalidez no válida"""
-
-class Error_entidad_invalida(Exception):
-    """Error entidad no válida"""
-
-class Error_factor_invalido(Exception):
-    """Error cuando el factor es 0"""
 
 def calcular_reemplazo_colpensiones(salario_promedio, reemplazo, semanas, edad, entidad):
     """Calcula la pensión mensual en Colpensiones"""
