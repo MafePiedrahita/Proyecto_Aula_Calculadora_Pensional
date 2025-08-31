@@ -1,20 +1,18 @@
 from .clases_error import Error_no_cumple_semanas, Error_invalidez, Error_entidad_invalida, Error_factor_invalido
 
 
-def calcular_reemplazo_colpensiones(salario_promedio, reemplazo, semanas, edad, entidad):
-    """Calcula la pensión mensual en Colpensiones"""
+MINIMO_SEMANAS_COTIZADAS = 1000
+EDAD_MINIMA_INVALIDES = 50
 
-    entidades_validas = ["Colpensiones"]
-    if entidad not in entidades_validas:
-        raise Error_entidad_invalida("Entidad inválida")
-
-    if semanas < 1000:
+def calcular_reemplazo_colpensiones(semanas, edad, salario_promedio, reemplazo):
+    if semanas < MINIMO_SEMANAS_COTIZADAS:
         raise Error_no_cumple_semanas("No cumple con el mínimo de semanas cotizadas")
 
-    if edad < 50:
+    if edad < EDAD_MINIMA_INVALIDES:
         raise Error_invalidez("Error por invalidez no válida")
 
     return salario_promedio * reemplazo
+
 
 
 def calcular_pension_privado(saldo_acumulado, factor, edad, entidad):
