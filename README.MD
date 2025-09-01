@@ -45,8 +45,10 @@ python -m venv .venv
 
 -macOS / Linux
 source .venv/bin/activate
+
 -Windows (PowerShell)
 .\\.venv\\Scripts\\Activate.ps1
+
 -Windows (CMD)
 .\.venv\Scripts\activate.bat
 
@@ -67,6 +69,7 @@ Asegúrate de estar en la raíz del proyecto (donde está la carpeta src/).
 Opción Recomendada: ajustar PYTHONPATH y usar discover
 
 Configura PYTHONPATH para que Python vea el paquete src/:
+
 -macOS / Linux
 export PYTHONPATH="$(pwd)/src"
 
