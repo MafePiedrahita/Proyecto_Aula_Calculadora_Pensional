@@ -1,23 +1,23 @@
-### Proyecto de Aula: Calculadora Pensional (Colombia reforma 2024)
+# Proyecto de Aula: Calculadora Pensional (Colombia reforma 2024)
 La calculadora Pensional es una herramienta que va a permitir estimar el valor de la pensional mensual que un trabajador en Colombia recibirá al momento de jubilarse.
 Este cálculo se realiza de acuerdo a las reglas establecidas en la Reforma Pnesional 2024, la cual introdujo un modelo de pilares, que combina el égimen público con los fondos privados.
 El propósito de este proyecto es brindar a los usuarios una forma seniclla de simular una pension futura.
 
-Contexto general de los pilares:
+### Contexto general de los pilares:
 Régimen de Prima Media (Colpensiones):
 -El trabajador cotiza semanas y al cumplir la edad y requisitos minimos, recibe una pensión calculada sobre un porcentaje de su salario promedio. Lo cual depende principalmente de:
 -Semanas cotizadas 
 -Edad
 -Salario promedio 
 -Tasa de reemplazo definida por la ley
-Régimen de Ahorro Individual con Solidaridad (Privadas):
+### Régimen de Ahorro Individual con Solidaridad (Privadas):
 -El trabajador ahorra en una cuenta individual administradad por un fondo privado (Protección, Porvenir, Colfondos)
 -El monto de la pensión depende de:
  -Saldo acumulado
  -Factor de cálculo (relacionado con esperanza de vida, tasas de interés y modalidad de pensión)
  -Edad
 
-Funcionalidades:
+### Funcionalidades:
 -Estima la pensión en Colpensiones 
 -Estima la pensión en fondos privados  
 -Permite introducir datos como salario promedio, semanas cotizadas, saldo acumulado y edad.  
