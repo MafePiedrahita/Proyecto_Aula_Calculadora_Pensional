@@ -1,12 +1,14 @@
 class Error_no_cumple_semanas(Exception):
-    """Error cuando las semanas cotizadas no cumplen el mínimo"""
+    """No cumple el mínimo de semanas cotizadas."""
+
 
 class Error_invalidez(Exception):
-    """Error por invalidez no válida"""
+    """No cumple la edad mínima para pensionarse (o no califica por edad)."""
+
 
 class Error_entidad_invalida(Exception):
-    """Error entidad no válida"""
+    """La entidad indicada no es válida para este cálculo."""
+
 
 class Error_factor_invalido(Exception):
-    """Error cuando el factor es 0"""
-    
+    """El factor para el régimen privado es inválido (<= 0)."""
