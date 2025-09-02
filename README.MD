@@ -56,15 +56,18 @@ pip install -r requirements.txt
 
 ### La estructura relevante del proyecto es:
 
-src/
-  
-  model/                  # Módulos de negocio
-  
-  test/                   # Pruebas unitarias (unittest)
-
-  view/
-
-   interfaz-calculadora-pensional.py   (Interfaz de consola)
+├─ src/
+│  ├─ __init__.py
+│  ├─ model/
+│  │  ├─ __init__.py
+│  │  ├─ Pension_prueba.py           # lógica de cálculo (Colpensiones/Privado)
+│  │  └─ clases_error.py             # excepciones específicas del dominio
+│  └─ test/
+│     ├─ __init__.py
+│     └─ test_pension.py             # suite de pruebas con unittest
+└─ view/
+   ├─ __init__.py                    
+   └─ interfaz-calculadora-pensional.py   # interfaz de consola
 
 ### 2) Ejecutar las pruebas unitarias
 
