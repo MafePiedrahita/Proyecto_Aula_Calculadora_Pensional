@@ -41,11 +41,12 @@ git clone <URL_DEL_REPO>
 cd <CARPETA_DEL_REPO>
 ```
 ### 2. (Recomendado) Crea y activa un entorno virtual
-Crear:
+### Crear:
 ```
 python -m venv .venv
 ```
-Activar
+### Activar
+
 -macOS / Linux
 ```
 source .venv/bin/activate
