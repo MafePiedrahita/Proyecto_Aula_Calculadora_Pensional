@@ -55,7 +55,7 @@ source .venv/bin/activate
 pip install -r requirements.txt
 
 ### La estructura relevante del proyecto es:
-
+```
 ├─ src/
 │  ├─ __init__.py
 │  ├─ model/
@@ -68,7 +68,7 @@ pip install -r requirements.txt
 └─ view/
    ├─ __init__.py                    
    └─ interfaz-calculadora-pensional.py   # interfaz de consola
-
+```
 ### 2) Ejecutar las pruebas unitarias
 
 Asegúrate de estar en la raíz del proyecto (donde está la carpeta src/).
