@@ -28,11 +28,10 @@ Entrevista a experto sobre el tema: https://soundcloud.com/mariana-henao-7488704
 
 # Guía rápida para ejecutar el proyecto
 
-A continuación tienes instrucciones claras y listas para copiar/pegar para:
+### Requisitos: 
 
--Correr las pruebas unitarias y ejecutar la interfaz de consola.
-
-## Requisitos: Python 3.10+. Se recomienda usar entorno virtual (venv).
+- Python 3.10+. 
+- Se recomienda usar entorno virtual (venv).
 
 ## 1) Preparación del entorno (una sola vez):
 
@@ -94,10 +93,13 @@ python -m unittest -v src.test.test.PruebasPension.test_normal_1
 ### 3) Ejecutar la interfaz de consola:
 
 Desde la raíz del proyecto (con PYTHONPATH configurado como en 2A o con .env de 2B):
+
 python view/interfaz-calculadora-pensional.py
+
 La app te pedirá los datos por consola y mostrará el resultado calculado usando las funciones de src/model/Pension_prueba.py.
 
 Si tu sistema requiere ruta explícita, usa:
+
 python ./view/interfaz-calculadora-pensional.py
 
 ### Elaborado por: 
