@@ -55,11 +55,16 @@ source .venv/bin/activate
 pip install -r requirements.txt
 
 ### La estructura relevante del proyecto es:
+
 src/
+  
   model/                  # Módulos de negocio
+  
   test/                   # Pruebas unitarias (unittest)
-view/
-  interfaz-calculadora-pensional.py   (Interfaz de consola)
+
+  view/
+
+   interfaz-calculadora-pensional.py   (Interfaz de consola)
 
 ### 2) Ejecutar las pruebas unitarias
 
