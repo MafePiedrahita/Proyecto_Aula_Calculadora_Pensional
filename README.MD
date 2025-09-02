@@ -33,7 +33,7 @@ Entrevista a experto sobre el tema: https://soundcloud.com/mariana-henao-7488704
 - Python 3.10+. 
 - Se recomienda usar entorno virtual (venv).
 
-## 1) Preparación del entorno (una sola vez):
+### 1) Preparación del entorno (una sola vez):
 
 ### 1. Clona el repositorio y entra a la carpeta del proyecto
 git clone <URL_DEL_REPO>
