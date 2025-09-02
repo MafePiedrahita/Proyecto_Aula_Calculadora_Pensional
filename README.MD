@@ -36,57 +36,37 @@ Entrevista a experto sobre el tema: https://soundcloud.com/mariana-henao-7488704
 ### 1) Preparación del entorno (una sola vez):
 
 ### 1. Clona el repositorio y entra a la carpeta del proyecto
+```
 git clone <URL_DEL_REPO>
 cd <CARPETA_DEL_REPO>
-
+```
 ### 2. (Recomendado) Crea y activa un entorno virtual
+Crear:
+```
 python -m venv .venv
-
+```
+Activar
 -macOS / Linux
+```
 source .venv/bin/activate
-
+```
 -Windows (PowerShell)
+```
 .\\.venv\\Scripts\\Activate.ps1
-
+```
 -Windows (CMD)
+```
 .\.venv\Scripts\activate.bat
-
-### 3. (Si existe) Instala dependencias
-pip install -r requirements.txt
-
-### La estructura relevante del proyecto es:
 ```
-├─ src/
-│  ├─ __init__.py
-│  ├─ model/
-│  │  ├─ __init__.py
-│  │  ├─ Pension_prueba.py           # lógica de cálculo (Colpensiones/Privado)
-│  │  └─ clases_error.py             # excepciones específicas del dominio
-│  └─ test/
-│     ├─ __init__.py
-│     └─ test_pension.py             # suite de pruebas con unittest
-└─ view/
-   ├─ __init__.py                    
-   └─ interfaz-calculadora-pensional.py   # interfaz de consola
-```
+
 ### 2) Ejecutar las pruebas unitarias
 
-Asegúrate de estar en la raíz del proyecto (donde está la carpeta src/).
+-Abre una terminal en la carpeta raíz del proyecto (donde ves src/).
 
-Opción Recomendada: ajustar PYTHONPATH y usar discover
-
-Configura PYTHONPATH para que Python vea el paquete src/:
-
--macOS / Linux
-export PYTHONPATH="$(pwd)/src"
-
--Windows (PowerShell)
-$env:PYTHONPATH = "$PWD/src"
-
--Windows (CMD)
-set PYTHONPATH=%cd%\src
-### Ahora ejecuta todas las pruebas:
+-Ejecuta todas las pruebas con este comando:
+```
 python -m unittest discover -s src/test -p "test*.py" -v
+``` 
 ## Ejemplos útiles:
 
 -Un archivo específico
@@ -109,6 +89,22 @@ La app te pedirá los datos por consola y mostrará el resultado calculado usand
 Si tu sistema requiere ruta explícita, usa:
 
 python ./view/interfaz-calculadora-pensional.py
+
+### La estructura relevante del proyecto es:
+```
+├─ src/
+│  ├─ __init__.py
+│  ├─ model/
+│  │  ├─ __init__.py
+│  │  ├─ Pension_prueba.py           # lógica de cálculo (Colpensiones/Privado)
+│  │  └─ clases_error.py             # excepciones específicas del dominio
+│  └─ test/
+│     ├─ __init__.py
+│     └─ test_pension.py             # suite de pruebas con unittest
+└─ view/
+   ├─ __init__.py                    
+   └─ interfaz-calculadora-pensional.py   # interfaz de consola
+```
 
 ### Elaborado por: 
 Mariana Heano Echeverri y Maria Fernanda Piedrahita Montoya.
