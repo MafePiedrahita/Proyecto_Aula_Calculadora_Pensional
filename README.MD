@@ -38,7 +38,8 @@ Entrevista a experto sobre el tema: https://soundcloud.com/mariana-henao-7488704
 ### 1. Clona el repositorio y entra a la carpeta del proyecto
 ```
 git clone <URL_DEL_REPO>
-cd <CARPETA_DEL_REPO>
+cd Proyecto_Aula_Calculadora_Pensional-main
+
 ```
 ### 2. (Recomendado) Crea y activa un entorno virtual
 ### Crear:
@@ -82,9 +83,9 @@ python -m unittest -v src.test.test.PruebasPension.test_normal_1
 ### 3) Ejecutar la interfaz de consola:
 
 Desde la raíz del proyecto (con PYTHONPATH configurado como en 2A o con .env de 2B):
-
-python view/interfaz-calculadora-pensional.py
-
+```
+python -m src.view.interfaz_calculadora_pensional
+```
 La app te pedirá los datos por consola y mostrará el resultado calculado usando las funciones de src/model/Pension_prueba.py.
 
 Si tu sistema requiere ruta explícita, usa:
