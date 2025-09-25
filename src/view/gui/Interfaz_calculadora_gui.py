@@ -1,7 +1,6 @@
 import sys
-import os
-sys.path.append(os.path.abspath(os.path.join(os.path.dirname(__file__), '..')))
-from model import Pension_prueba
+sys.path.append("src")
+from src.model import pension_prueba
 
 from kivy.app import App
 from kivy.uix.boxlayout import BoxLayout
@@ -58,7 +57,7 @@ class CalculadorPensional(App):
             factor = 20  # ejemplo para privado
 
             # Ejemplo usando Colpensiones
-            resultado = Pension_prueba.calcular_reemplazo_colpensiones(salario_promedio, reemplazo, semanas_cotizadas, edad, entidad)
+            resultado = pension_prueba.calcular_reemplazo_colpensiones(salario_promedio, reemplazo, semanas_cotizadas, edad, entidad)
             self.etiqueta_resultado.text = f"Pensión estimada: {resultado}"
         except Exception as e:
             self.etiqueta_resultado.text = f"Error: {str(e)}"
