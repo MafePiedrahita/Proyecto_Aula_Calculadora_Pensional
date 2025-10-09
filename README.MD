@@ -110,3 +110,56 @@ python ./view/interfaz-calculadora-pensional.py
 
 ### Elaborado por: 
 Mariana Heano Echeverri y Maria Fernanda Piedrahita Montoya.
+
+---
+
+## 🧩 Ejecución de la Interfaz Gráfica (Kivy)
+
+### 🔧 Requisitos previos
+
+Antes de ejecutar la interfaz, asegúrate de tener instalado el framework **Kivy**.
+
+Puedes instalar Kivy desde la terminal con el siguiente comando:
+
+```bash
+pip install kivy
+```
+
+> 💡 Si usas un entorno virtual (recomendado), actívalo antes de instalar Kivy.
+
+---
+
+### ▶️ Ejecución por consola
+
+1. Abre una terminal o consola en la carpeta raíz del proyecto.
+2. Dirígete al directorio donde se encuentra la interfaz src/view/gui.
+3. Ejecuta el siguiente comando:
+
+```bash
+python Interfaz_calculadora_gui.py
+```
+
+Esto iniciará la interfaz gráfica de la calculadora pensional utilizando Kivy.
+Una ventana se abrirá mostrando la aplicación con su interfaz visual completa.
+
+---
+
+### 💻 Ejecución del ejecutable (.exe)
+
+Si no deseas usar la consola, también puedes ejecutar la aplicación desde el **ejecutable disponible en la sección de “Releases” del repositorio de GitHub**.
+
+1. Ve al apartado **Releases**.
+2. Descarga el archivo ejecutable (`.exe`) correspondiente a tu sistema operativo.
+3. Una vez descargado, simplemente haz doble clic sobre el archivo para abrir la interfaz.
+
+> ⚠️ No es necesario tener Python ni Kivy instalados para usar el ejecutable, ya que está empaquetado con todas las dependencias.
+
+---
+
+### 👨‍💻 Autores de la interfaz
+
+* **Juan Sebastian Pinilla Giraldo**
+* **Pedro Hernandez**
+
+---
+
