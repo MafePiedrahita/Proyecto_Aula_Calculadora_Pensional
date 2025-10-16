@@ -1,7 +1,14 @@
 import pytest
-from src.init_db import apply_schema
+from src.model.conexion_db import db_cursor
 
-@pytest.fixture(scope="session", autouse=True)
-def preparar_esquema():
-    apply_schema()
-    yield
+@pytest.fixture(autouse=True)
+def limpiar_tablas():
+    """
+    Limpia las tablas antes de cada prueba para evitar conflictos de datos previos.
+    Se ejecuta automáticamente antes de cada test.
+    """
+    with db_cursor() as (conn, cur):
+        # El orden importa si hay claves foráneas
+        cur.execute("DELETE FROM simulacion;")
+        cur.execute("DELETE FROM cotizacion;")
+        cur.execute("DELETE FROM aportante;")
