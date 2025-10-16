@@ -163,3 +163,11 @@ Si no deseas usar la consola, también puedes ejecutar la aplicación desde el *
 
 ---
 
+
+### Prerequisitos
+
+### Configuración de la base de datos 
+
+Esta aplicación requiere este creada una tabla llamada aportantes.
+
+
