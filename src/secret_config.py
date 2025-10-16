@@ -1,0 +1,5 @@
+DB_NAME = "pensional_db"
+DB_USER = "postgres"
+DB_PASS = "postgres"
+DB_HOST = "127.0.0.1"
+DB_PORT = "5432"
