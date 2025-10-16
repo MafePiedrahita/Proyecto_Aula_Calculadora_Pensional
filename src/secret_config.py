@@ -1,5 +1,7 @@
-DB_NAME = "pensional_db"
-DB_USER = "postgres"
-DB_PASS = "postgres"
-DB_HOST = "127.0.0.1"
-DB_PORT = "5432"
+DB_CONFIG = {
+    "dbname": "calculadora_pensional_bn0p",
+    "user": "mariana",
+    "password": "ac3WV0dGOrocpMdC1A2jY81sUIvOro70",
+    "host": "dpg-d3n5n92dbo4c73dq7bvg-a.virginia-postgres.render.com",
+    "port": "5432"
+}
