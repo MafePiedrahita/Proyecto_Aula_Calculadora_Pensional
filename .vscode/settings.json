@@ -4,6 +4,7 @@
   "python.testing.unittestEnabled": false,
   "python.testing.nosetestsEnabled": false,
   "python.testing.cwd": "${workspaceFolder}",
-  "python.testing.pytestArgs": ["src/test"],
+  "python.testing.pytestArgs": ["test"],
+  "python.testing.pytestPath": "${workspaceFolder}/.venv/bin/pytest",
   "python.testing.autoTestDiscoverOnSaveEnabled": true
 }

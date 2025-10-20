@@ -32,3 +32,13 @@ def eliminar(aportante_id: int) -> int:
     with db_cursor() as (conn, cur):
         cur.execute(sql, (aportante_id,))
         return cur.rowcount
+    
+def buscar_por_nro_doc(nro_doc: str) -> Aportante | None:
+    """
+    Retorna el aportante con el número de documento dado, o None si no existe.
+    """
+    sql = "SELECT * FROM aportante WHERE nro_doc = %s;"
+    with db_cursor() as (conn, cur):
+        cur.execute(sql, (nro_doc,))
+        row = cur.fetchone()
+        return Aportante(**row) if row else None
