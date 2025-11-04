@@ -1,11 +1,18 @@
-{% extends "base.html" %}
+<!doctype html>
+<html lang="es">
+<head>
+<meta charset="utf-8">
+<title>Calculadora Pensional - Menú</title>
+</head>
+<body>
+<h1>Calculadora Pensional</h1>
+<h2>Menú principal</h2>
 
-{% block content %}
-  <h2>Menú principal</h2>
-  <ul>
-    <li><a href="{{ url_for('pension.buscar') }}">Buscar aportante</a></li>
-    <li><a href="{{ url_for('pension.insertar') }}">Insertar nuevo aportante</a></li>
-    <li><a href="{{ url_for('pension.lista') }}">Ver lista de aportantes</a></li>
-    <li><a href="{{ url_for('init_db_route') }}">Crear tablas de la Base de Datos</a></li>
-  </ul>
-{% endblock %}
+<ul>
+<li><a href="/insertar">Insertar nuevo aportante</a></li>
+<li><a href="/buscar">Buscar aportante</a></li>
+<li><a href="/lista">Ver lista de aportantes</a></li>
+<li><a href="/init-db">Crear tablas de la Base de Datos</a></li>
+</ul>
+</body>
+</html>

@@ -1,20 +1,29 @@
-{% extends "base.html" %}
+<!doctype html>
+<html lang="es">
+<head>
+<meta charset="utf-8">
+<title>Buscar aportante</title>
+</head>
+<body>
+<h1>Buscar aportante</h1>
 
-{% block content %}
-  <h2>Buscar aportante</h2>
+<form method="post">
+<div>
+<label>Documento:</label>
+<input type="text" name="documento" required>
+</div>
+<button type="submit">Buscar</button>
+</form>
 
-  <form method="post">
-    <label>Documento:</label>
-    <input type="text" name="cedula" required>
-    <button type="submit">Buscar</button>
-  </form>
+{% if resultado %}
+<h2>Resultado</h2>
+<p><strong>Nombre:</strong> {{ resultado.nombre }}</p>
+<p><strong>Documento:</strong> {{ resultado.documento }}</p>
+<p><strong>Salario:</strong> {{ resultado.salario }}</p>
+{% elif resultado is not none %}
+<p>No se encontró ningún aportante con ese documento.</p>
+{% endif %}
 
-  {% if resultado %}
-    <h3>Resultado</h3>
-    <p>Nombre: {{ resultado.nombre }}</p>
-    <p>Documento: {{ resultado.documento }}</p>
-    <p>Salario: {{ resultado.salario }}</p>
-  {% elif resultado is not none %}
-    <p>No se encontró ningún aportante con ese documento.</p>
-  {% endif %}
-{% endblock %}
+<p><a href="/">← Volver al menú</a></p>
+</body>
+</html>
