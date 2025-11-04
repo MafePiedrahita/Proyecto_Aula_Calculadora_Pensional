@@ -173,11 +173,11 @@ Si no deseas usar la consola, también puedes ejecutar la aplicación desde el *
 ---
 
 
-### Configuración de la base de datos 
+# Configuración de la base de datos 
 
 Esta aplicación requiere este creada una tabla llamada aportantes.
 
-### Ejecución como Aplicación Web (Flask)
+## Ejecución como Aplicación Web (Flask)
 
 Esta versión permite usar la Calculadora Pensional como una aplicación web interactiva, desarrollada con Flask bajo el patrón MVC (Modelo - Vista - Controlador).
 
