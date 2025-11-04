@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <title>Calculadora Pensional</title>
+  <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+</head>
+<body>
+  <h1> Calculadora Pensional </h1>
+
+  <form action="/calcular" method="POST">
+    <label>Salario promedio:</label>
+    <input type="number" name="salario" step="0.01" required><br>
+
+    <label>Semanas cotizadas:</label>
+    <input type="number" name="semanas" required><br>
+
+    <label>Edad:</label>
+    <input type="number" name="edad" required><br>
+
+    <label>Régimen:</label>
+    <select name="regimen">
+      <option value="colpensiones">Colpensiones</option>
+      <option value="privado">Fondo Privado</option>
+    </select><br>
+
+    <button type="submit">Calcular</button>
+  </form>
+
+  {% if resultado %}
+    <h2>Resultado: {{ resultado }}</h2>
+  {% endif %}
+</body>
+</html>
