@@ -1,7 +1,8 @@
 DB_CONFIG = {
-    "dbname": "calculadora_pensional_bn0p",
-    "user": "mariana",
-    "password": "ac3WV0dGOrocpMdC1A2jY81sUIvOro70",
-    "host": "dpg-d3n5n92dbo4c73dq7bvg-a.virginia-postgres.render.com",
-    "port": "5432"
+    "dbname": "calculadora_pensional_db",
+    "user": "maria",
+    "password": "gMvEl1uDFYsmIPyrtdZvx0iDU94Z5P9",
+    "host": "dpg-d45117fgi27c7allbi0-a.virginia-postgres.render.com",
+    "port": "5432",
 }
+
