@@ -1,34 +1,11 @@
-<!DOCTYPE html>
-<html lang="es">
-<head>
-  <meta charset="UTF-8">
-  <title>Calculadora Pensional</title>
-  <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
-</head>
-<body>
-  <h1> Calculadora Pensional </h1>
+{% extends "base.html" %}
 
-  <form action="/calcular" method="POST">
-    <label>Salario promedio:</label>
-    <input type="number" name="salario" step="0.01" required><br>
-
-    <label>Semanas cotizadas:</label>
-    <input type="number" name="semanas" required><br>
-
-    <label>Edad:</label>
-    <input type="number" name="edad" required><br>
-
-    <label>Régimen:</label>
-    <select name="regimen">
-      <option value="colpensiones">Colpensiones</option>
-      <option value="privado">Fondo Privado</option>
-    </select><br>
-
-    <button type="submit">Calcular</button>
-  </form>
-
-  {% if resultado %}
-    <h2>Resultado: {{ resultado }}</h2>
-  {% endif %}
-</body>
-</html>
+{% block content %}
+  <h2>Menú principal</h2>
+  <ul>
+    <li><a href="{{ url_for('pension.buscar') }}">Buscar aportante</a></li>
+    <li><a href="{{ url_for('pension.insertar') }}">Insertar nuevo aportante</a></li>
+    <li><a href="{{ url_for('pension.lista') }}">Ver lista de aportantes</a></li>
+    <li><a href="{{ url_for('init_db_route') }}">Crear tablas de la Base de Datos</a></li>
+  </ul>
+{% endblock %}

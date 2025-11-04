@@ -1,0 +1,20 @@
+{% extends "base.html" %}
+
+{% block content %}
+  <h2>Buscar aportante</h2>
+
+  <form method="post">
+    <label>Documento:</label>
+    <input type="text" name="cedula" required>
+    <button type="submit">Buscar</button>
+  </form>
+
+  {% if resultado %}
+    <h3>Resultado</h3>
+    <p>Nombre: {{ resultado.nombre }}</p>
+    <p>Documento: {{ resultado.documento }}</p>
+    <p>Salario: {{ resultado.salario }}</p>
+  {% elif resultado is not none %}
+    <p>No se encontró ningún aportante con ese documento.</p>
+  {% endif %}
+{% endblock %}

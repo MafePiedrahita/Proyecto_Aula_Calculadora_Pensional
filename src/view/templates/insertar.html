@@ -1,0 +1,22 @@
+{% extends "base.html" %}
+
+{% block content %}
+  <h2>Insertar nuevo aportante</h2>
+
+  <form method="post">
+    <label>Nombre:</label>
+    <input type="text" name="nombre" required>
+
+    <label>Documento:</label>
+    <input type="text" name="cedula" required>
+
+    <label>Salario promedio:</label>
+    <input type="number" step="0.01" name="salario" required>
+
+    <button type="submit">Guardar</button>
+  </form>
+
+  {% if mensaje %}
+    <p>{{ mensaje }}</p>
+  {% endif %}
+{% endblock %}

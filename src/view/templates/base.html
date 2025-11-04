@@ -1,0 +1,24 @@
+<!doctype html>
+<html lang="es">
+<head>
+  <meta charset="utf-8">
+  <title>Calculadora Pensional</title>
+  <link rel="stylesheet" href="{{ url_for('pension.static', filename='style.css') }}">
+</head>
+<body>
+  <header>
+    <h1>Calculadora Pensional</h1>
+    <nav>
+      <a href="{{ url_for('pension.index') }}">Inicio</a>
+      <a href="{{ url_for('pension.buscar') }}">Buscar</a>
+      <a href="{{ url_for('pension.insertar') }}">Insertar</a>
+      <a href="{{ url_for('pension.lista') }}">Lista</a>
+      <a href="{{ url_for('init_db_route') }}">Crear tablas BD</a>
+    </nav>
+  </header>
+
+  <main>
+    {% block content %}{% endblock %}
+  </main>
+</body>
+</html>
