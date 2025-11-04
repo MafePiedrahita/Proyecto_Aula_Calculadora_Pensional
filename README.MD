@@ -94,18 +94,27 @@ python ./view/interfaz-calculadora-pensional.py
 
 ### La estructura relevante del proyecto es:
 ```
-├─ src/
-│  ├─ __init__.py
-│  ├─ model/
-│  │  ├─ __init__.py
-│  │  ├─ Pension_prueba.py           # lógica de cálculo (Colpensiones/Privado)
-│  │  └─ clases_error.py             # excepciones específicas del dominio
-│  └─ test/
-│     ├─ __init__.py
-│     └─ test_pension.py             # suite de pruebas con unittest
-└─ view/
-   ├─ __init__.py                    
-   └─ interfaz-calculadora-pensional.py   # interfaz de consola
+src/
+├── app.py                         
+├── controller/
+│   ├── __init__.py
+│   └── pension_controller.py     
+├── model/
+│   ├── __init__.py
+│   ├── conexion_db.py            
+│   └── Pension_prueba.py          
+├── service/
+│   ├── __init__.py
+│   └── pension_service.py         
+├── view/
+│   ├── templates/                 
+│   │   ├── index.html
+│   │   ├── insertar.html
+│   │   ├── buscar.html
+│   │   └── crear_tablas.html
+│   └── static/                    
+└── init_db.py                     
+
 ```
 
 ### Elaborado por: 
@@ -163,8 +172,6 @@ Si no deseas usar la consola, también puedes ejecutar la aplicación desde el *
 
 ---
 
-
-### Prerequisitos
 
 ### Configuración de la base de datos 
 
