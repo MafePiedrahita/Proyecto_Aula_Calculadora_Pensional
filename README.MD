@@ -177,4 +177,43 @@ Si no deseas usar la consola, también puedes ejecutar la aplicación desde el *
 
 Esta aplicación requiere este creada una tabla llamada aportantes.
 
+### Ejecución como Aplicación Web (Flask)
+
+Esta versión permite usar la Calculadora Pensional como una aplicación web interactiva, desarrollada con Flask bajo el patrón MVC (Modelo - Vista - Controlador).
+
+## Requisitos adicionales
+ 
+Asegúrate de tener Flask y psycopg2 instalados:
+
+```
+pip install flask psycopg2
+```
+
+## Configuración de la base de datos
+
+La aplicación se conecta automáticamente a una base de datos PostgreSQL.
+
+## Crear las tablas en la base de datos
+
+Para crear las tablas automáticamente:
+
+
+Asegúrate de que el archivo sql/01_schema.sql existe y contiene el esquema de la tabla aportantes.
+
+
+## Ejecuta la aplicación y visita:
+
+```
+http://127.0.0.1:5000
+```
+
+## Ejecutar la aplicación web
+
+1. Abre la terminal en la carpeta raíz del proyecto
+2. Ejecuta:
+
+```
+python -m src.app
+```
+
 
